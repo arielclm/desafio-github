@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./images/favico32.png">
+    <link rel="shortcut icon" href="/images/favico32.png">
     <!--Icons-->
     <script src="https://kit.fontawesome.com/5a03eaf8e8.js" crossorigin="anonymous"></script>
     <!-- Links de Bootstrap -->
@@ -12,8 +12,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
-      crossorigin="anonymous"
-    />
+      crossorigin="anonymous/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" />
     <!-- Links de Animate -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -23,7 +22,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
  <!-- Links de Title y css -->
     <title>To Fish Teresa</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/index.css">
 </head>
 <body>
     <header>
@@ -38,21 +37,21 @@
               <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                   <li class="nav-item">
-                    <a href="#hero" class="nav-link active" aria-current="page">Home</a>
+                    <a href="/index.html" class="nav-link active" aria-current="page">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#somos-tft"  class="nav-link" >Nosotros</a>
+                    <a href="/index.html"  class="nav-link" >Nosotros</a>
                   </li>
                   <li class="nav-item">
-                    <a href="#nuestros-productos" class="nav-link" >Productos</a>
+                    <a href="/index.html" class="nav-link" >Productos</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Encontranos
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                      <li><a href="#localizacion" class="dropdown-item" href="#">Localización</a></li>
-                      <li><a href="./pages/contacto.html" class="dropdown-item" href="#">Contacto</a></li>
+                      <li><a href="/index.html" class="dropdown-item" href="#">Localización</a></li>
+                      <li><a href="/pages/contacto.html" class="dropdown-item" href="#">Contacto</a></li>
                     </div>
                     </ul>
                   </li>
@@ -64,78 +63,53 @@
     <!--Presentación-->
 <main>
     <section id="hero">
-        <h1 class="wow animate__animated animate__animated animate__backInRight">Los mejores señuelos<br>al alcance de tus manos</h1>
-        <a href="#nuestros-productos">
-        <button class="wow animate__animated animate__rubberBand">COMPRAR </button></a>
-    </section>
-<!--NOSOTROS-->
-    <section id="somos-tft">
-        <div class="container">
-            <div class="img-container"></div>
-            <div class="texto">
-
-                <h2 class="wow animate__animated animate__backInRight
-                ">Somos <span class="color-acento">To  Fish Teresa</span></h2>
-                <p>Desde 2003 brindando  los  mejores  señuelos  importados para las aventuras de pesca deportiva, con gran entusiasmo llegamos a ignaugurar nuestro local físico en la provincia de Buenos Aires en  2010. Superandonos  y  dando lo mejor para  la  experiencia  y confort   de  nuestros queridos  clientes.</p>
+        <div class="containerform">
+            <div class="row">
+              <div class="col-md-6 col-md-offset-3">
+                <div class="well well-sm">
+                  <form class="form-horizontal" action="" method="post">
+                  <fieldset>
+                    <legend class="text-center">Contacto</legend>
+            
+                    <!-- Name input-->
+                    <div class="form-group">
+                      <label class="col-md-3 control-label" for="name">Nombre y Apellido</label>
+                      <div class="col-md-9">
+                        <input id="name" name="name" type="text" placeholder="Nombre y Apellido" class="form-control">
+                      </div>
+                    </div>
+            
+                    <!-- Email input-->
+                    <div class="form-group">
+                      <label class="col-md-3 control-label" for="email">Email</label>
+                      <div class="col-md-9">
+                        <input id="email" name="email" type="text" placeholder="Tu Email" class="form-control">
+                      </div>
+                    </div>
+            
+                    <!-- Message body -->
+                    <div class="form-group">
+                      <label class="col-md-3 control-label" for="message">Mensaje</label>
+                      <div class="col-md-9">
+                        <textarea class="form-control" id="message" name="message" placeholder="Escribe aquí..." rows="5"></textarea>
+                      </div>
+                    </div>
+            
+                    <!-- Form actions -->
+                    <div class="form-group">
+                      <div class="col-md-2 text-right justify">
+                        <button type="submit" class="btn btn-primary btn-lg">Enviar</button>
+                      </div>
+                    </div>
+                  </fieldset>
+                  </form>
+                </div>
+              </div>
             </div>
         </div>
-    </section>
-<!--PRODUCTOS-->
-    <section id="nuestros-productos">
-        <div class="container">
-            <h2 class="wow animate__animated animate__animated animate__backInRight">Nuestros Productos</h2>
-            <div class="productos">
-                <div class="carta">
-                    <h3>Blue  Sky</h3>
-                    <p>Sofisticado señuelo importado  de Estados Unidos. Son especiales para la pesca de cefalópodos.</p>
-                    <button>Comprar</button>
-                </div>
-                <div class="carta">
-                    <h3>Withe Cloud</h3>
-                    <p>Dinámico  señuelo importado de China. Son muy utilizados para la pesca de cefalópodos.s</p>
-                    <button>Comprar</button>
-                </div>
-                <div class="carta">
-                    <h3> Platinum Stone</h3>
-                    <p>Agresivo  señuelo importado de  Nueva Zelanda.Este tipo de señuelos cucharillas son muy usados en la pesca de agua dulce a spinning, sobre todo para pesca de la trucha. </p>
-                    <button>Comprar</button>
-                </div>  
-                <div class="carta">
-                    <h3>Black Ocean</h3>
-                    <p>Impactante señuelo traido de  Africa.  Son muy efectivos si queremos practicar la pesca al trolling.</p>
-                    <button>Comprar</button>
-                </div>
-                <div class="carta">
-                    <h3>Pink  Floyd</h3>
-                    <p>Masizo señuelo importado  desde Inglaterra.Los jigs suelen ser señuelos duros metálicos.</p>
-                    <button>Comprar</button>
-                </div>
-                <div class="carta">
-                    <h3> Green Island</h3>
-                    <p>Ligero señuelo  importado de Australia. Se usan principalmente para spinning.</p>
-                    <button>Comprar</button>
-                </div>  
-            </div>
-        </div>
-    </section>
-<!--LOCALIZACIÓN-->
-    <section id="localizacion">
-        <div class="container">
-            <h1 class="wow titulo animate__animated animate__animated animate__backInRight">Encontranos por aquí</h1>
-            <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.01688788952!2d-58.38375908511298!3d-34.60373446500538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4aa9f0a6da5edb%3A0x11bead4e234e558b!2sObelisco!5e0!3m2!1ses-419!2sar!4v1645386155135!5m2!1ses-419!2sar" width="350" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
-<p class="map-p">Emblemático monumento de piedra blanca cordobesa inaugurado en 1936; es un punto de encuentro popular.Av. 9 de Julio s/n, C1043 CABA</p>
-        </div>
-    </section>
-<!--ENVIOS-->
-    <section id="final">
-        <h2 class="wow animate__animated animate__animated animate__backInRight">Consultar por  envio gratis
-        </h2>
-        <button class="wow animate__animated animate__rubberBand">CLICK ACÁ!</button>
     </section>
 </main>
-<!--FOOTER-->
-    <footer>
-        <div class="my-1">
+    </section>
             <!-- Footer -->
             <footer
                     class="text-center text-lg-start text-white"
@@ -257,8 +231,7 @@
 <script
 src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-crossorigin="anonymous"
-></script>
+crossorigin="anonymous"></script>
 <script>
 var scroll = new SmoothScroll('a[href*="#"]');
 </script>
